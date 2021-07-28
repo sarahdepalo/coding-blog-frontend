@@ -1,23 +1,15 @@
-import logo from './logo.svg';
+import { BrowserRouter as Router } from 'react-router-dom';
+import BlogList from './components/BlogList';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1> // Ned's Declassified Coding Survival Guide </h1>
+      <p>On the fence about attending a coding bootcamp? Choose one of the blogs below to learn more about other coder's journies to help you decide if a bootcamp is the right path for you.</p>
+      <Router>
+        <BlogList />
+      </Router>
     </div>
   );
 }

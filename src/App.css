@@ -1,38 +1,73 @@
+html, body {
+  background-color: #edefef;
+}
+
 .App {
-  text-align: center;
+  width: 960px;
+  margin: 0 auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.hidden {
+  display: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.blog {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+a {
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 14px;
+  background-color: #3a595c;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+h1, h2, h3 {
+  color: #192e2f;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ul {
+  list-style-type: none;
+}
+
+.col {
+  width: 500px;
+}
+
+.blogContentOverflow {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 30px;
+}
+
+.blogTitle {
+  text-align: center;
+  color: #192e2f;
+}
+
+.blogAuthor {
+  color: grey;
+  font-size: 25px;
+  text-align: center;
+}
+
+.goBack {
+  display: block;
+  width: 159px;
+  text-align: center;
+  margin: 0 auto;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 14px;
+  background-color: #3a595c;
+  color: white;
+  border: none;
+}
+
+.buttonContainer {
+  margin-top: 40px;
 }
